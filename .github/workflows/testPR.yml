@@ -1,0 +1,8 @@
+name: Test pr
+on: pull_request
+jobs:
+  output:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output information
+        run: echo "Hello World!"
