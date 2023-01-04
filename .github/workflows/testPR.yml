@@ -1,0 +1,7 @@
+name: Test pr
+on: pull_request
+jobs:
+  output:
+    stpes:
+      - name: Output information
+        run: echo "Hello World!"
