@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get data
-        run: echo ABC=123 >> $GITHUB_ENV
+        run: echo "ABC=123" >> $GITHUB_ENV
       - name: If
         if: env.ABC == '123'
         run: echo "If"
