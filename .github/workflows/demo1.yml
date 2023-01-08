@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get data
-        run: export ABC = "123"
+        run: export ABC=123
       - name: If
         if: env.ABC == '123'
         run: echo "If"
