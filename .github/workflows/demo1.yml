@@ -7,7 +7,7 @@ jobs:
       - name: Get data
         run: export ABC = "123"
       - name: If
-        if: env.ABC = "123"
+        if: env.ABC == "123"
         run: echo "If"
       - name: Else
         if: env.ABC != "123"
